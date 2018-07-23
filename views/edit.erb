@@ -1,0 +1,19 @@
+<h1>Edit planet</h1>
+
+<form action="/planets/<%= @planet['id'] %>" method="post">
+    <input type="hidden" name="_method" value="put">
+    
+    <label for="">name</label>
+    <input type="text" name="name" value="<%= @planet['name'] %>">
+
+    <label for="">diameter (km)</label>
+    <input type="text" name="diameter" value="<%= @planet['diameter'] %>">
+
+    <label for="">distance from the sun</label>
+    <input type="text" name="distance_fr_sun" value="<%= @planet['distance_fr_sun'] %>">
+
+    <label for="">image url</label>
+    <input type="text" name="image_url" value="<%= @planet['image_url']%>">
+
+    <button>update</button>
+</form>

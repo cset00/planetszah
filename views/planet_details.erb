@@ -1,0 +1,25 @@
+
+
+<div class="container">
+    <div class="img-container">
+        <img class="planet-img" src="<%= @planet['image_url']%>" alt="">
+    </div>
+
+    <div class="info-container">
+        <h1><%= @planet['name']%></h1>
+        <p>Diameter (km): <%= @planet_diameter %></p>
+        <p>Distance from the sun (km): <%= @planet_distance_fr_sun %></p>
+
+        
+
+        <div class="buttons">
+            <a class="btn-normal" href="/planets/<%=@planet['id']%>/edit">edit</a>
+            <form action="/planets/<%= @planet['id'] %>" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <button class="btn-red">delete</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>

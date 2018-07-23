@@ -1,0 +1,13 @@
+<h1>Current planets in our Solar System</h1>
+
+<h3><a class="btn-new" href="/planets/new">Create your own magical planet!</a></h3>
+
+<% @planets.each do |planet| %>
+    <p> 
+        <a href="/planets/<%= planet['id']%>"> 
+            <%= planet['name'] %> 
+        </a> 
+    </p>
+
+ <% end %> 
+
