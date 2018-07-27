@@ -3,6 +3,7 @@ header {
     /* font-family: 'Gaegu', cursive; */
     font-family: 'Poor Story', cursive;
     text-align: center;
+    
 }
 
 body {
@@ -44,15 +45,17 @@ p {
 
 img {
     width: 60%;
-    mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%);
-    /* -webkit-mask-image: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(50, 50, 50, 0.8) 0%, rgba(80, 80, 80, 0.2) ); */
-    /* -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(45%, rgba(255,255,255,1)), color-stop(73%, rgba(255,255,255,0.5)), color-stop(100%, rgba(0,0,0,0))); */
-    /* -webkit-box-reflect: below 0 linear-gradient(transparent, white); */
+    /* mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%); */
+    /* -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
+    mask-image: linear-gradient(to bottom, transparent 25%, black 75%); */
+    -webkit-mask-image: radial-gradient(ellipse 95% 95% at 50% 50%, black 30%, transparent 80%);
+    mask-image: radial-gradient(ellipse 90% 80% at 70% 70%, black 40%, transparent 50%);
+
 }
 
 .planet-img {
     /* -webkit-box-reflect: below -150px linear-gradient(transparent, white); */
-    -webkit-box-reflect: below -80px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.2)));
+    -webkit-box-reflect: below -70px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.2)));
 }
 
 

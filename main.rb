@@ -1,5 +1,5 @@
 require 'sinatra'
-# require 'sinatra/reloader'
+require 'sinatra/reloader'
 require 'pry'
 
 require_relative 'db_config'
@@ -46,7 +46,7 @@ get '/planets/:id/edit' do
   erb :edit
 end
 
-put 'planets/:id' do # doesn't work... :/
+put '/planets/:id' do # doesn't work... :/
   planet = Planet.find(params[:id])
   planet.name = params[:name]
   planet.diameter = params[:diameter]
@@ -56,6 +56,7 @@ put 'planets/:id' do # doesn't work... :/
   planet.save
 
   redirect "/planets/#{params[:id]}"
+  binding.pry
 end
 
 
